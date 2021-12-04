@@ -11,8 +11,6 @@ async function deployBuild() {
       password: process.env.SSH_PASS,
     });
 
-    console.log(client);
-
     await client.uploadDir("./build", process.env.DEST_BUILD_PATH);
     client.close();
   } catch (e) {
