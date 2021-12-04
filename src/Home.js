@@ -6,7 +6,6 @@ import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
-import CssBaseline from "@mui/material/CssBaseline";
 import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
@@ -46,6 +45,9 @@ export default function Home() {
         <Box
           sx={{
             bgcolor: "background.paper",
+            backgroundImage: "url(/images/hero_banner.jpg)",
+            backgroundSize: "cover",
+            textShadow: "#000 1px 0 20px",
             pt: 8,
             pb: 6,
           }}
