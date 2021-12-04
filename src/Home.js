@@ -20,9 +20,9 @@ function Copyright() {
       {"© "}
       {new Date().getFullYear()}{" "}
       <Link color="inherit" href="https://cryptorush.app/">
-        CryptoRUSH.app - Gen Creations, LLC.
-      </Link>
-      {"."}
+        CryptoRUSH.app
+      </Link>{" "}
+      - Gen Creations, LLC.
     </Typography>
   );
 }
