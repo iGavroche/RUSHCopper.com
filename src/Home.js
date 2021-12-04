@@ -33,11 +33,21 @@ export default function Home() {
   return (
     <Box>
       <AppBar position="relative">
-        <Toolbar>
+        <Toolbar sx={{ display: "flex" }}>
           <BalanceIcon sx={{ mr: 2 }} />
           <Typography variant="h6" color="inherit" noWrap>
             RUSHCopper ($RSHCP)
           </Typography>
+
+          <div style={{ flexGrow: 1 }} />
+
+          <Link href="https://discord.gg/JXtecYFUyP" target="_blank">
+            <img
+              src="/images/join-our-discord-lite.png"
+              alt="CryptoRUSH Discord Channel"
+              width="120"
+            />
+          </Link>
         </Toolbar>
       </AppBar>
       <main>
