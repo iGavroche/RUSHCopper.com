@@ -34,9 +34,14 @@ export default function Home() {
     <Box>
       <AppBar position="relative">
         <Toolbar sx={{ display: "flex" }}>
-          <BalanceIcon sx={{ mr: 2 }} />
+          <img
+            src="/logo.png"
+            width="24"
+            height="24"
+            style={{ marginRight: "10px" }}
+          />
           <Typography variant="h6" color="inherit" noWrap>
-            RUSHCopper ($RSHCP)
+            RUSHCopper ($RUSHCOPR)
           </Typography>
 
           <div style={{ flexGrow: 1 }} />
@@ -88,7 +93,7 @@ export default function Home() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Get $RSHCP</Button>
+              <Button variant="contained">Get $RUSHCOPR</Button>
               <Button variant="outlined">Get Involved</Button>
             </Stack>
           </Container>
@@ -135,7 +140,7 @@ export default function Home() {
       {/* Footer */}
       <Box sx={{ bgcolor: "background.paper", p: 6 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
-          RUSHCopper - $RSHCP
+          RUSHCopper - $RUSHCOPR
         </Typography>
         <Typography
           variant="subtitle1"
