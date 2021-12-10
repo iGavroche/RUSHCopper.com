@@ -1,7 +1,6 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Button from "@mui/material/Button";
-import BalanceIcon from "@mui/icons-material/Balance";
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
@@ -13,6 +12,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Link from "@mui/material/Link";
+import { createTheme, ThemeProvider } from "@mui/material";
 
 function Copyright() {
   return (
@@ -28,33 +28,42 @@ function Copyright() {
 }
 
 const cards = [];
+const appBarTheme = createTheme({
+  palette: {
+    primary: {
+      main: "rgb(62, 29, 122); !important",
+    },
+  },
+});
 
 export default function Home() {
   return (
     <Box>
-      <AppBar position="relative">
-        <Toolbar sx={{ display: "flex" }}>
-          <img
-            src="/logo.png"
-            width="24"
-            height="24"
-            style={{ marginRight: "10px" }}
-          />
-          <Typography variant="h6" color="inherit" noWrap>
-            RUSHCopper ($RUSHCOPR)
-          </Typography>
-
-          <div style={{ flexGrow: 1 }} />
-
-          <Link href="https://discord.gg/JXtecYFUyP" target="_blank">
+      <ThemeProvider theme={appBarTheme}>
+        <AppBar position="relative">
+          <Toolbar sx={{ display: "flex" }}>
             <img
-              src="/images/join-our-discord-lite.png"
-              alt="CryptoRUSH Discord Channel"
-              width="120"
+              src="/logo.png"
+              width="24"
+              height="24"
+              style={{ marginRight: "10px" }}
             />
-          </Link>
-        </Toolbar>
-      </AppBar>
+            <Typography variant="h6" color="inherit" noWrap>
+              RUSHCopper
+            </Typography>
+
+            <div style={{ flexGrow: 1 }} />
+
+            <Link href="https://discord.gg/JXtecYFUyP" target="_blank">
+              <img
+                src="/images/join-our-discord-lite.png"
+                alt="CryptoRUSH Discord Channel"
+                width="120"
+              />
+            </Link>
+          </Toolbar>
+        </AppBar>
+      </ThemeProvider>
       <main>
         {/* Hero unit */}
         <Box
