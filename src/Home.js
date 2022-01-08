@@ -19,10 +19,9 @@ function Copyright() {
     <Typography variant="body2" color="text.secondary" align="center">
       {"© "}
       {new Date().getFullYear()}{" "}
-      <Link color="inherit" href="https://cryptorush.app/">
-        CryptoRUSH.app
+      <Link color="inherit" href="https://www.cryptoru.sh/">
+        CryptoRUSH
       </Link>{" "}
-      - Gen Creations, LLC.
     </Typography>
   );
 }
@@ -102,8 +101,14 @@ export default function Home() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Get $RUSHCOPR</Button>
-              <Button variant="outlined">Get Involved</Button>
+              <Button variant="contained">COMING SOON</Button>
+              <Button
+                variant="outlined"
+                href="https://github.com/CryptoRUSHGav/RUSHCopper.com"
+                target="_blank"
+              >
+                Get Involved
+              </Button>
             </Stack>
           </Container>
         </Box>
